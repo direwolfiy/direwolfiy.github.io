@@ -10,14 +10,18 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Welcome to Simonsays</p>
+        <p>Welcome.</p>
+        <p>The world is now real because Simon said so.</p>
         <Link href="posts/first-post">
           <a>Read first Post</a>
         </Link>
-        <p>
-          (This is a sample website - you’ll be building a site like this on{" "}
-          <a href="https://www.nextjs.cn/learn">our Next.js tutorial</a>.)
-        </p>
+      </section>
+      <section>
+        <h2>2022.02.02</h2>
+        <Link href="posts/first-trans">
+          <a>用 GitHub Pages 部署 Next.js 应用。</a>
+        </Link>
+        <p className={utilStyles.sign}>文档翻译</p>
       </section>
     </Layout>
   );

@@ -50,3 +50,32 @@
 .lightText {
     color: #999;
 }
+
+.intro {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.citation {
+    text-align: justify;
+    font-size: 14px;
+    border-left: solid;
+    border-left-width: 4px;
+    border-color: rgb(221,221,221);
+    padding-left: 8px;
+}
+
+.sign{
+    text-align: right;
+    color: gray;
+    font-size: 14px;
+}
+
+.inlineBold{
+    font-weight:bold;
+}
+
+.bodyText{
+    text-align: justify;
+    font-size: 16px;
+}

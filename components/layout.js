@@ -4,16 +4,18 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
 const name = "Simonsays";
-export const siteTitle = "Next.js Sample Website";
+export const siteTitle = "Simonsays Be Cool";
 
 export default function Layout({ children, home }) {
   return (
+    //所有页面return用div包裹，样式设置为container
     <div className={styles.container}>
+      {/*修改html的head部分*/}
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        {/*<link rel="icon" href="/favicon.ico" />*/}
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="My studying record using next.js. Could be my blog."
         />
         <meta
           property="og:image"
@@ -24,8 +26,10 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+
+      {/*页眉*/}
       <header className={styles.header}>
-        {home ? (
+        {home /*如果是主页 */ ? (
           <>
             <img
               src="/images/profile.jpg"
@@ -35,6 +39,7 @@ export default function Layout({ children, home }) {
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
+          /*如果不是主页*/
           <>
             <Link href="/">
               <a>
