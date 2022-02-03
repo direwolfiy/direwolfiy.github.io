@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Head from "next/head";
+import Image from "next/image";
 import Layout from "../../components/layout";
 //import article from "../../styles/trans.module.css";
 import utilStyles from "../../styles/utils.module.css";
@@ -50,9 +51,16 @@ export default function FirstTrans() {
           <p>
             完成的网页（部署在 GitHub Pages 上）：
             <br />
-            https://james-wallis.github.io/wallisconsultancy/
+            <a href="james-wallis.github.io/wallisconsultancy/">
+              https://james-wallis.github.io/wallisconsultancy
+            </a>
           </p>
-          <p>源代码：https://github.com/james-wallis/wallisconsultancy</p>
+          <p>
+            源代码：
+            <a href="https://github.com/james-wallis/wallisconsultancy">
+              https://github.com/james-wallis/wallisconsultancy
+            </a>
+          </p>
           <h2 className={utilStyles.headingMd}>引言</h2>
           <p>
             用 Next.js 重新实现 Wallis Consultancy
@@ -128,7 +136,7 @@ export default function FirstTrans() {
               $github_token # GitHub access token to use when pushing to the
               gh-pages branch local_dir: out # Directory to push to the gh-pages
               branch on: # Only deploy when the build is on master or main
-              branch - two common default branch names # If you're using a
+              branch - two common default branch names # If you&aposre using a
               different branch name, add it here all_branches: true condition:
               $TRAVIS_BRANCH =~ ^(master|main)$
             </pre>
@@ -161,10 +169,12 @@ export default function FirstTrans() {
                   </p>
 
                   <p>
-                    <img
+                    <Image
                       src="/images/ogiqsi8d63glc59p6a4g.jpg"
                       alt="The Full GitHub repo scope"
                       title=""
+                      width={500}
+                      height={120}
                     />
                   </p>
                 </li>
@@ -179,20 +189,24 @@ export default function FirstTrans() {
                 </li>
                 <li>
                   导航至更多选项（more options）-设置(setting)
-                  <img
+                  <Image
                     src="/images/av9vyftpt2sl5t843fph.png"
                     alt="Travis Settings"
                     title=""
+                    width={500}
+                    height={150}
                   />
                 </li>
                 <li>
                   一旦添加了新的叫做<code>github_token</code>的
                   <code>environment variable</code>并且用你的 access token 作为
                   <code>value</code>。选择性地使它只在 master branch 上可见。
-                  <img
+                  <Image
                     src="/images/6f84pfcxgpxmo8ccivgz.png"
                     alt="Travis Settings Environment Variable"
                     title=""
+                    width={500}
+                    height={30}
                   />
                 </li>
               </ol>
@@ -218,10 +232,12 @@ export default function FirstTrans() {
             GitHub Pages 之类的地方提供服务。
           </p>
           <p>
-            <img
+            <Image
               src="/images/08rfqglhw7huf4r0036u.jpg"
               alt="You should be able to see the gh-pages branch."
               title=""
+              width={500}
+              height={400}
             />
           </p>
           <p>为你的仓库启用 GitHub Pages 你需要做：</p>
@@ -234,10 +250,12 @@ export default function FirstTrans() {
               </p>
 
               <p>
-                <img
+                <Image
                   src="/images/oaq9ld9k5ucazxsu30np.jpg"
                   alt="The GitHub Pages settings"
                   title=""
+                  width={500}
+                  height={400}
                 />
               </p>
             </li>
@@ -252,10 +270,12 @@ export default function FirstTrans() {
           <p>如果你跟着上面的步骤下来，你期望看到你的网站和本地看到的一样。</p>
           <p>
             但实际上你很可能看到一个内容正确，但是没有样式的网站。并且，如果你想在导航之间切换，它将无法正确解析。它看起来是下面这个样子：
-            <img
+            <Image
               src="/images/flj94q6oybmv6rxlbclr.png"
               alt="Wallis Consultancy website without the CSS"
               title=""
+              width={500}
+              height={250}
             />
           </p>
           <h3>想知道为什么会这样？</h3>
