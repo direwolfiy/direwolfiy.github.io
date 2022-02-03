@@ -31,7 +31,6 @@ export default function FirstTrans() {
           HTML，CSS 和 Bootstrap 的网页，形成更便捷的工作流，减少重复工作的消耗
         </p>
         <div className={utilStyles.bodyText}>
-          {" "}
           {/*文章主体 */}
           <p className={utilStyles.citation}>
             <span className={utilStyles.inlineBold}>2021更新</span>
