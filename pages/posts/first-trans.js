@@ -18,13 +18,13 @@ export default function FirstTrans() {
         </h1>
         <p className={utilStyles.citation}>
           <span>
-            译注：
+            译注:
             <a href="https://dev.to/jameswallis/deploying-a-next-js-app-to-github-pages-24pn">
               原文链接
             </a>
           </span>
           <br />
-          <span>最后更新：2022 年 2 月 2 日 22:34:18</span>
+          <span>最后更新:2022 年 2 月 2 日 22:34:18</span>
         </p>
         <p className={utilStyles.intro}>
           这篇博客是系列的一部分，这个系列文档说明如何用 Next.js 框架重构依赖于
@@ -45,17 +45,16 @@ export default function FirstTrans() {
             我在 GitHub Pages 上为这篇博客保留了一个版本的 Wallis
             Consultancy，并且更新了下面的所有指向 Wallis Consultancy 的链接。
             <br />
-            尽管如此，GitHub Pages 仍然 100%是一个部署 Next.js项目非常好的地方！
+            尽管如此，GitHub Pages 仍然 100%是一个部署 Next.js项目非常好的地方!
           </p>
           <p>
-            完成的网页（部署在 GitHub Pages 上）：
-            <br />
+            完成的网页（部署在 GitHub Pages 上）: <br />
             <a href="james-wallis.github.io/wallisconsultancy/">
               https://james-wallis.github.io/wallisconsultancy
             </a>
           </p>
           <p>
-            源代码：
+            源代码:
             <a href="https://github.com/james-wallis/wallisconsultancy">
               https://github.com/james-wallis/wallisconsultancy
             </a>
@@ -64,7 +63,7 @@ export default function FirstTrans() {
           <p>
             用 Next.js 重新实现 Wallis Consultancy
             已经完成了。这篇博文记录了将一个 Next.js 项目部署到 GitHub Pages.
-            包括：
+            包括:
           </p>
           <ul>
             <li>
@@ -121,25 +120,24 @@ export default function FirstTrans() {
             </li>
             <li>在文件中输入下面的代码（无需注释）:</li>
           </ol>
-          <p>
-            <pre>
-              language: node_js # Node.js based project node_js: - 12 # Level of
-              Node.js to use cache: directories: - node_modules # Cache the
-              node_modules folder for quicker build times script: - npm run
-              build # Runs next build - npm run export # Runs next export and
-              generates the out directory - touch out/.nojekyll # Creates a file
-              telling Github not to build the project using Jekyll deploy:
-              provider: pages # Informs Travis this is a deployment to GitHub
-              Pages skip_cleanup: true # Prevents Travis from resetting the
-              working directory made during the build github_token:
-              $github_token # GitHub access token to use when pushing to the
-              gh-pages branch local_dir: out # Directory to push to the gh-pages
-              branch on: # Only deploy when the build is on master or main
-              branch - two common default branch names # If you&aposre using a
-              different branch name, add it here all_branches: true condition:
-              $TRAVIS_BRANCH =~ ^(master|main)$
-            </pre>
-          </p>
+
+          <pre>
+            language: node_js # Node.js based project node_js: - 12 # Level of
+            Node.js to use cache: directories: - node_modules # Cache the
+            node_modules folder for quicker build times script: - npm run build
+            # Runs next build - npm run export # Runs next export and generates
+            the out directory - touch out/.nojekyll # Creates a file telling
+            Github not to build the project using Jekyll deploy: provider: pages
+            # Informs Travis this is a deployment to GitHub Pages skip_cleanup:
+            true # Prevents Travis from resetting the working directory made
+            during the build github_token: $github_token # GitHub access token
+            to use when pushing to the gh-pages branch local_dir: out #
+            Directory to push to the gh-pages branch on: # Only deploy when the
+            build is on master or main branch - two common default branch names
+            # If you&aposre using a different branch name, add it here
+            all_branches: true condition: $TRAVIS_BRANCH =~ ^(master|main)$
+          </pre>
+
           <p>
             在
             <a href="https://docs.travis-ci.com/user/deployment-v2/providers/pages/">
@@ -162,7 +160,7 @@ export default function FirstTrans() {
                       Creating a personal access token - GitHub Docs
                     </a>
                     )<em>注意</em>
-                    ：因为我写这篇文章时我的仓库是非公开的，因此我启用了全部的
+                    :因为我写这篇文章时我的仓库是非公开的，因此我启用了全部的
                     <code>repo</code>scope。但是你可能只需要启用
                     <code>public_repo</code>scope
                   </p>
@@ -239,10 +237,10 @@ export default function FirstTrans() {
               height={400}
             />
           </p>
-          <p>为你的仓库启用 GitHub Pages 你需要做：</p>
+          <p>为你的仓库启用 GitHub Pages 你需要做:</p>
           <ol>
             <li>导航至你 Github 仓库的设置标签页</li>
-            <li>滚动至"GitHub Pages"章节</li>
+            <li>滚动至'GitHub Pages'章节</li>
             <li>
               <p>
                 在 Source 版块下选择<code>gh-pages branch</code>
@@ -268,7 +266,7 @@ export default function FirstTrans() {
           <h2 className={utilStyles.headingMd}>有点儿问题...CSS 样式哪去了</h2>
           <p>如果你跟着上面的步骤下来，你期望看到你的网站和本地看到的一样。</p>
           <p>
-            但实际上你很可能看到一个内容正确，但是没有样式的网站。并且，如果你想在导航之间切换，它将无法正确解析。它看起来是下面这个样子：
+            但实际上你很可能看到一个内容正确，但是没有样式的网站。并且，如果你想在导航之间切换，它将无法正确解析。它看起来是下面这个样子:
             <Image
               src="/images/flj94q6oybmv6rxlbclr.png"
               alt="Wallis Consultancy website without the CSS"
@@ -293,12 +291,12 @@ export default function FirstTrans() {
             <code>wallisconsultancy/out</code>.
           </p>
           <h3>好吧，但是我们能解决这个问题吗？</h3>
-          <p>当然可以！</p>
+          <p>当然可以!</p>
           <p>
             <em>注意</em>
-            ：如果你是要部署在一个自定义域名上，这个问题就会自己消失（只要你不用像
+            :如果你是要部署在一个自定义域名上，这个问题就会自己消失（只要你不用像
             GitHub Pages
-            一样的子路径）。跳过这篇文章剩余的内容直接看我的下一篇文章：
+            一样的子路径）。跳过这篇文章剩余的内容直接看我的下一篇文章:
             <a href="https://dev.to/jameswallis/using-a-custom-domain-with-github-pages-1g1m">
               用自定义域名访问 GitHub Pages
             </a>
