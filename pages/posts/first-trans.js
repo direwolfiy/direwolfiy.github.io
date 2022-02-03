@@ -240,7 +240,7 @@ export default function FirstTrans() {
           <p>为你的仓库启用 GitHub Pages 你需要做:</p>
           <ol>
             <li>导航至你 Github 仓库的设置标签页</li>
-            <li>滚动至'GitHub Pages'章节</li>
+            <li>滚动至 GitHub Pages 章节</li>
             <li>
               <p>
                 在 Source 版块下选择<code>gh-pages branch</code>
