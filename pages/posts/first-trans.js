@@ -133,7 +133,7 @@ export default function FirstTrans() {
             to use when pushing to the gh-pages branch local_dir: out #
             Directory to push to the gh-pages branch on: # Only deploy when the
             build is on master or main branch - two common default branch names
-            # If you&aposre using a different branch name, add it here
+            # If you are using a different branch name, add it here
             all_branches: true condition: $TRAVIS_BRANCH =~ ^(master|main)$
           </pre>
 

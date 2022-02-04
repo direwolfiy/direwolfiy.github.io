@@ -10,12 +10,12 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Welcome.</p>
         <p>The world is now real because Simon said so.</p>
         <Link href="posts/first-post">
-          <a>Read first Post</a>
+          <a>Read First Post</a>
         </Link>
       </section>
+      {/*new post*/}
       <section>
         <h2>2022.02.02</h2>
         <Link href="posts/first-trans">
