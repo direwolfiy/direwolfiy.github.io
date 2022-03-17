@@ -69,7 +69,7 @@ export default function FirstTrans() {
               用<code>next export</code>将 Next.js 项目转换成静态网页。
             </li>
             <li>
-              搭建一个 Travis 管道来构建网页并 push 到一个<code>gh-pages</code>
+              搭建一个 Travis 管道来构建网页并自动 push 到<code>gh-pages</code>
               分支
             </li>
           </ul>
@@ -108,9 +108,8 @@ export default function FirstTrans() {
           </p>
           <h2 className={utilStyles.headingMd}>创建 Travis build</h2>
           <p>
-            关联 Travis 与一个 Github 仓库就和创建一个<code>.travis.yml</code>
-            一样简单。下面对这个过程以及如何通过 Travis build
-            用秘密环境变量进行了说明。
+            关联 Travis 与一个 Github 仓库其实只需要配置一个<code>.travis.yml</code>
+            文件。下面对这个过程以及如何设置 Travis build 环境变量进行了说明。
           </p>
           <ol>
             <li>
