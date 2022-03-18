@@ -11,9 +11,7 @@ export default function Home() {
       </Head>
       <section className={utilStyles.headingMd}>
         <p>The world is now real because Simon said so.</p>
-        <Link href="posts/first-post">
-          <a>Read First Post</a>
-        </Link>
+      
       </section>
       {/*new post*/}
       <section>
