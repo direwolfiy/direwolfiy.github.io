@@ -11,24 +11,26 @@ export default function Index() {
   return (
     <>
       <SEO title={globalData.blogName} description={globalData.blogTitle}></SEO>
-      <IndexLayout>
+      <IndexLayout >
         <div className={styles.main}>
-          <div className={styles.imgWrap}>
+          {/* <div className={styles.imgWrap}>
             <Image src={snapanoPng} alt="" layout="fixed"></Image>
-          </div>
-          <h1 className={styles.title}>Nextjs Blog Demo</h1>
-          <div className={styles.des}>
+          </div> */}
+          <div>
+          <h1 className={styles.title}>Example projects Demo</h1>
+          {/* <div className={styles.des}>
             A simple blog demo based on <span>nextjs</span> + <span>antd</span> + <span>scss</span>
-          </div>
+          </div> */}
           <div className={styles.btn}>
             <Space>
-              <Link href='/doc'>
-                <Button size="large" type="primary" >Discover Now</Button>
+              <Link href='/projects'>
+                <Button size="large" type="primary" >View Projects</Button>
               </Link>
-              <Link href='https://github.com/ggwork/nextjs-blog-demo.git'>
+              {/* <Link href='https://github.com/ggwork/nextjs-blog-demo.git'>
                 <Button size="large">Visit On Github</Button>
-              </Link>
+              </Link> */}
             </Space>
+            </div>
           </div>
         </div>
       </IndexLayout>

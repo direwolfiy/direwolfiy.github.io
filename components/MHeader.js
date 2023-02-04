@@ -26,20 +26,20 @@ export default function Header() {
     },
     {
       label: (
-        <Link href='/doc'>
-          Doc
+        <Link href='/projects'>
+          Projects
         </Link>
       ),
-      key: 'doc',
+      key: 'projects',
     },
-    {
-      label: (
-        <a href="https://github.com/ggwork/nextjs-blog-demo" target="_blank" rel="noopener noreferrer">
-          Github
-        </a>
-      ),
-      key: 'github',
-    },
+    // {
+    //   label: (
+    //     <a href="https://github.com/ggwork/nextjs-blog-demo" target="_blank" rel="noopener noreferrer">
+    //       Github
+    //     </a>
+    //   ),
+    //   key: 'github',
+    // },
   ]
   return (
     <header>
