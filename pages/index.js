@@ -17,14 +17,14 @@ export default function Index() {
             <Image src={snapanoPng} alt="" layout="fixed"></Image>
           </div> */}
           <div>
-          <h1 className={styles.title}>Example projects Demo</h1>
+          <h1 className={styles.title}>WELCOME TO SIMONSAYS.ICU</h1>
           {/* <div className={styles.des}>
             A simple blog demo based on <span>nextjs</span> + <span>antd</span> + <span>scss</span>
           </div> */}
           <div className={styles.btn}>
             <Space>
-              <Link href='/projects'>
-                <Button size="large" type="primary" >View Projects</Button>
+              <Link href='/post'>
+                <Button size="large" type="primary" >View →</Button>
               </Link>
               {/* <Link href='https://github.com/ggwork/nextjs-blog-demo.git'>
                 <Button size="large">Visit On Github</Button>

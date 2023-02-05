@@ -26,11 +26,11 @@ export default function Header() {
     },
     {
       label: (
-        <Link href='/projects'>
-          Projects
+        <Link href='/post'>
+          Posts
         </Link>
       ),
-      key: 'projects',
+      key: 'post',
     },
     // {
     //   label: (
